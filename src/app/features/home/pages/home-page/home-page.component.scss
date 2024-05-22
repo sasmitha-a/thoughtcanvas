@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//Mobile First
+.content {
+    background-image: url('D:/Sasmitha/sem 6/FSWDlab/Mean-Project-main/Mean-Project-main/Mean-Stack-Project/mean-stack-project/src/assets/homepage.png');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+.main-section {
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline:2rem;
+
+    
+    .landing-text {
+        padding-inline: 1rem;
+
+    }
+    .landing-img-container {
+        width: 60%;
+    }
+}
+}
+
+
+.landing-img-container {
+    margin-top:-5rem;
+    height: 30rem;
+    display: none;
+
+    padding-left: 2rem;
+
+    // background-color: red;
+    .landing-img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        padding-left:4rem;
+        display: block;
+        animation-name: enterFromRight;
+        animation-duration: 2s;
+
+        padding-top:5rem;
+        
+    }
+}
+//keyframes
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+@keyframes enterFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) {
+
+    .landing-img-container {
+        display: block;
+    }
+    .landing-text {
+        max-width: 40%;
+        margin-top: 3rem;
+    }
+}
+
+//Dell Notebook
+@media (min-width: 1000px) {
+    .content {
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+        .main-section {
+
+            .landing-text {
+                margin-top: 4rem;
+            }
+        }
+    }
+
+}
+
+//Medium Laptop
+@media (min-width: 1366px) {
+    .content {
+        margin-top: 5rem;
+    }
+}
+
+//Bigger Screens
+@media (min-width: 1920px) {
+    .content {
+       padding-left:10rem;
+       height: auto;
+    }
+}

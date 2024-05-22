@@ -1,0 +1,13 @@
+<section class="content">
+    <div>
+      <label for="title">Title:</label>
+      <input id="title" [(ngModel)]="title" placeholder="Enter post title" />
+    </div>
+    <quill-editor 
+      class="text-editor" 
+      #textEditor
+      (onContentChanged)="onEditorContentChanged($event)">
+    </quill-editor>
+    <button (click)="sendContent()">Create Post</button>
+  </section>
+  

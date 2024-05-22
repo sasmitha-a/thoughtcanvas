@@ -1,0 +1,30 @@
+<!-- <div class="card">
+    <div class="card__side front-content">
+        <h2 class="title">Standard Plan: Pro Writer</h2>
+        <ul class="features-list">
+            <li class="features-list__item">Everything in Basic Access</li>
+            <li class="features-list__item">Advanced Publishing Tools</li>
+            <li class="features-list__item">Enhanced Analytics</li>
+            <li class="features-list__item">Ad-Free Experience</li>
+        </ul>
+    </div>
+
+    <div class="card__side back-content">
+        <h2 class="title">Free</h2>
+        <p>Just sign up and start writing!</p>
+    </div>
+</div> -->
+
+<div class="card">
+    <div class="card__side front-content">
+        <h2 class="title">{{pricingOffer.title}}</h2>
+        <ul class="features-list">
+            <li class="features-list__item" *ngFor="let feature of pricingOffer.featuresList">{{feature}}</li>
+        </ul>
+    </div>
+
+    <div class="card__side back-content">
+        <h2 class="title">{{pricingOffer.price}}</h2>
+        <p>{{pricingOffer.sloganPrice}}</p>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+* {
+    background-color: transparent;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    // background-color: red;
+
+    .links-container {
+        margin: 1rem;
+
+        .links-list i {
+            // padding: .5rem;
+            padding-inline: 1rem;
+            padding-block: 1rem;
+            margin-inline: .5rem;
+            border-radius: 50%;
+            border: 1px solid #E1FAEE;
+            transition: all .2s;
+
+            &:hover {
+                cursor:pointer;
+                background-color: #5AE4A7;
+            }
+        }
+    }
+
+    .copyright-container {
+        margin-top: 1rem;
+        font-size: 10px;
+
+    }
+    
+}
+
+//Tablet
+@media (min-width: 768px) {
+    .links-list i {
+        padding: .5rem;
+        margin-inline: .5rem;
+    }
+}

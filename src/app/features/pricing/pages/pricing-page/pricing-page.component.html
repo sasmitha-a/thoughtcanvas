@@ -1,0 +1,9 @@
+<section class="content">
+
+    <ul class="pricing-offers-list" >
+        <li class="pricing-offers-list__item" *ngFor="let offer of pricingOffers">
+            <pricing-offer-card
+            [pricingOffer]="offer"></pricing-offer-card>
+        </li>
+    </ul>
+</section>

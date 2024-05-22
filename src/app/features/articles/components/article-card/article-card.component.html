@@ -1,0 +1,11 @@
+<section class="card-content" (click)="onCardClick()">
+    <div class="description">
+        <h2 class="title">{{ post.title }}</h2>
+
+        <div class="btn-description">
+            <img class="arrow-icon" src="../../../../../assets/arrow-up-right-circle-fill.svg" alt="">
+            <p>See More</p>
+        </div>
+    </div>
+    <div class="image-container"><img class="article-img" [src]="post.urlPhoto" alt=""></div>
+</section>

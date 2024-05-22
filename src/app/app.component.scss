@@ -1,0 +1,44 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.content {
+    min-height: 100%;
+    display: flex;
+    flex-direction:column;
+
+    .header-container {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .main-section {
+        background-color:#F8F7F4;
+        flex:1;
+        margin-top: 3rem;
+        
+    }
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+    .header-container {
+        width: 100%;
+        margin: auto;
+
+    }
+
+}
+
+//Bigger Screens
+@media (min-width: 1920px) {
+    .main-section {
+        margin-bottom: 5rem;
+    }
+}

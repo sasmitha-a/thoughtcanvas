@@ -1,0 +1,47 @@
+/* New Post Form Styles */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* New Post Form container */
+.new-post-form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+
+    /* Input fields */
+    input[type="text"] {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    /* Send button */
+    button {
+        padding: 0.5rem 2rem;
+        background-color: #007bff; /* Blue color */
+        color: #fff; /* White text color */
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #0056b3; /* Darker blue color on hover */
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<div *ngIf="loading" class="loader-overlay">
+    <div class="loader"></div>
+  </div>
+  
+  <section class="content">
+    <section class="articles-list">
+      <ng-container *ngFor="let post of posts; let isEven = even">
+        <article-card class="card" [post]="post" (showFullPost)="showFullPost($event)"></article-card>
+      </ng-container>
+    </section>
+  </section>
+  
+  <div *ngIf="selectedPost" class="full-post-overlay" (click)="closeFullPost()">
+    <div class="full-post-container">
+      <div class="full-post">
+        <h2>{{ selectedPost.title }}</h2>
+        <!-- Use innerHTML to render post content as HTML -->
+        <div [innerHTML]="selectedPost.content"></div>
+        <button class="close-icon" (click)="closeFullPost()">&#10006;</button>
+      </div>
+    </div>
+  </div>
+  

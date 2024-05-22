@@ -1,0 +1,83 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Center content on the page */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Optional: to center align text */
+}
+
+/* Mobile first styles */
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align content inside the section */
+    padding: 1rem;
+
+    .title {
+        font-weight: 900;
+        font-size: 35px;
+        padding-block: 1rem;
+    }
+
+    .description {
+        padding-block: .3rem;
+        font-size: 18px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        margin-block: 1rem;
+        padding-block: .5rem;
+        height: 4rem;
+        width: 100%;
+        max-width: 200px; /* Optional: set a max-width for the button */
+        border-radius: 10px;
+        background-color: #1F1F1F;
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        animation-name: moveInLeft;
+        animation-duration: 1.5s;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+/* Keyframes */
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Tablet and larger screens */
+@media (min-width: 1000px) {
+    .text-section {
+        .title {
+            font-size: 40px;
+        }
+
+        .description {
+            font-size: 17px;
+        }
+    }
+}

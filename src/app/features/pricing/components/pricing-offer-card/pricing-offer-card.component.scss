@@ -1,0 +1,65 @@
+.card {
+    user-select: none;
+    width: 23rem;
+    perspective:150rem;
+    -moz-perspective: 150rem;
+    transition: all 1s ease;
+
+
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+    
+    .card__side {
+        transition: all .8s;
+        // background-color: violet;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        backface-visibility: hidden;
+
+        height: 15rem;
+
+
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .features-list {
+            &__item {
+                margin-block: .4rem;
+            }
+        }
+    }
+
+    .front-content {
+        background-image:  linear-gradient(to bottom right, #5DE2AA, #E1FAEE);
+    }
+
+    .back-content {
+        background-color: black;
+        color: white;
+
+        transform: rotateY(180deg);
+    }
+
+
+    &:hover .front-content {
+        transform: rotateY(180deg);
+    }
+
+    &:hover .back-content {
+        transform: rotateY(0deg);
+    }
+
+
+}

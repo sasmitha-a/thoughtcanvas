@@ -1,0 +1,7 @@
+<section class="content">
+    <ul class="items-container" [class.items-container-mobile]="isMobile">
+        <li class="item" (click)="redirectTo('home')" ><a class="item-link"><span class="title">Home</span></a></li>
+        <li class="item" (click)="redirectTo('start-writing')" ><a class="item-link"><span class="title">Create an Article</span></a></li>
+        <li class="item" (click)="redirectTo('articles')" ><a class="item-link"><span class="title">Articles</span></a></li>
+    </ul>
+</section>
